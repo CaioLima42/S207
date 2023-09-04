@@ -15,7 +15,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  test:
 
     runs-on: ubuntu-latest
 
@@ -29,6 +29,7 @@ jobs:
         cache: maven
     - name: Testes with Maven
       run: |
+       cd S107-main
        cd Aula-GitHub-Actions
        mvn clean test site
 
