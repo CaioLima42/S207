@@ -28,7 +28,9 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Testes with Maven
-      run: mvn clean test site
+      run: |
+       cd Aula-GitHub-Actions
+       mvn clean test site
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     #- name: Update dependency graph
