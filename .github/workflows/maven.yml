@@ -49,11 +49,12 @@ jobs:
        cd S107-main
        cd Aula-GitHub-Actions
        mvn clean test site
+
     - name: Upload de artefato
       uses: action/upload-artifact@v3
       with:
         name: relatorio-testes
-        path: S107-main/Aula-GitHub-Actions/target/site
+        path: S107-main/Aula-GitHub-Actions/target/site/
 
 
 
